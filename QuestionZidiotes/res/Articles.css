@@ -1,0 +1,344 @@
+
+/* -------------------------------------------- */
+	/* 
+		fichier css pour les articles
+	*/
+/* -------------------------------------------- */
+
+
+
+	/* Mise en page */
+	
+		body
+		{
+			min-width : 1000px;
+			
+			margin : 0px;
+		}
+		
+		.Site
+		{
+			min-width : 600px;
+		}
+		
+		.page_Corps
+		{
+			min-width : 600px;
+		}
+	
+		/* Aspect Global */
+	
+			[class *= "Zone"]
+				/* dimmensionnement et centrage des zones */
+			{
+					padding : 20px;
+					
+					margin-left : auto;
+					margin-right : auto;
+					
+					border-radius : 0px 0px 40px 40px;
+			}
+					
+				.Info
+				{
+					margin : 10px;
+					padding : 10px;
+				}
+		
+			/* Article */
+			
+				.TitredArticle
+				{
+					background-color : rgb(220,200,100);
+					
+					width : 90%;
+					min-width : 560px;
+					padding : 40px 20px;
+					
+					margin : 40px auto 0px auto;
+					
+					border-radius : 40px;
+				}
+				
+				.ZonedArticle
+				{
+					background-color : rgb(220,200,100);
+					
+					width : 70%;
+					min-width : 460px;
+				}
+					
+					.Intro
+					{
+						background-color : rgb(240,220,150);
+						
+						margin : 10px;
+						padding : 10px 20px;
+						
+						border-radius : 20px;
+						
+						box-shadow : -6px -6px 3px green;
+					}
+				
+					.Chapitre
+					{
+						background-color : rgb(240,220,150);
+						
+						margin : 10px;
+						padding : 10px 20px;
+						
+						border-radius : 20px;
+					}
+					
+					.Conclusion
+					{
+						background-color : rgb(240,220,150);
+						
+						margin : 10px;
+						padding : 10px 20px;
+						
+						border-radius : 20px;
+						
+						box-shadow : 6px 6px 3px red;
+					}
+
+			/* -------------------------------------------- */
+					
+			/* Notes */
+					
+				.ZonedeNotes
+				{
+					background-color : rgb(200,200,100);
+					
+					width : 60%;
+					/* min-width : 370px; */
+				}
+					
+					.Note
+					{
+						background-color : rgb(210,210,150);
+						
+						margin : 10px 0px;
+						padding : 20px;
+						
+						border-radius : 20px;
+					}
+					
+						div.Note p.pNin
+						{
+							margin : 0em 0em 0.75em;
+						}
+					
+						div.Note p.pNout
+						{
+							margin : 0.75em 0em 0em;
+						}
+
+			/* -------------------------------------------- */
+				
+			/* Commentaires */
+			
+				.ZonedeTrollage
+				{
+					width : 60%;
+					
+					margin : 50px auto;
+				}
+					
+					.TitredeCommentaire
+					{
+						background-color : rgb(150,200,220);
+						
+						width : 90%;
+						padding : 40px 20px;
+						
+						margin : 20px auto 0px auto;
+						
+						border-radius : 40px;
+					}
+					
+						.TitredeCommentaire p
+						{
+							text-align : center;
+							
+							font-size : 300%;
+							font-weight : bold;
+							
+							margin : 10px;
+						}
+					
+					.ZonedeCommentaires
+					{
+						background-color : rgb(150,200,220);
+						
+						width : 70%;
+						min-width : 400px;
+					}
+					
+						.CommResponsable
+						{
+							width : 70%;	/* taille en fonction de la zone de commentaire */
+							
+							margin : 20px auto;
+							padding : 20px 0px;
+							
+							border-width : 6px;
+							border-style : solid;
+							border-color : green orange red;
+						}
+							
+							.CommResponsable p
+							{
+								text-align : center;
+							}
+					
+						.Commentaire
+						{
+							background-color : rgb(170,210,220);
+							
+							margin : 10px;
+							padding : 20px;
+							
+							border-radius : 20px;
+						}
+						
+					.ZonedePostComm
+					{
+						background-color : rgb(170,220,250);
+					
+						width : 50%;
+						min-width : 320px;
+						
+						margin : 0px auto 30px;
+						padding : 0px 20px 20px;
+					}
+					
+						.ZonedePostComm p.legend
+						{
+							width : 70%;
+							
+							margin : 0px auto;
+							padding : 20px 20px 0px;
+							
+							text-align : center;
+							
+							font-size : 120%;
+							font-weight : bold;
+						}
+							
+							.FlechePostComm
+							{
+								display : block;
+							
+								width : 70%;
+								height : 2em;
+								
+								margin : 0px auto 30px;
+								padding : 0px 20px;
+							}
+					
+						.ZonedePostComm p
+						{
+							text-align : center;
+						}
+						
+							.ZonedePostComm #pseudo
+							{
+								width : 50%;
+							}
+						
+							.ZonedePostComm #email
+							{
+								width : 60%;
+							}
+						
+							.ZonedePostComm #url
+							{
+								width : 70%;
+							}
+					
+						.ZonedePostComm textarea
+						{
+							width : 80%;
+							height : 500px;
+						}
+
+			/* -------------------------------------------- */
+
+		/* -------------------------------------------- */
+
+	/* -------------------------------------------- */
+	
+	/* Mise en forme */
+
+		/* Notes */
+			
+				/* Balise de note dans l'article : */
+					/*
+						<a class="aNote" id="Notein1" href="#Note1" title="Lire la note" >(1)</a>
+					*/
+					
+				/* Balise de note en bas de page : */
+					/*
+						<a class="aNote" id="Note1" href="#Notein1" title="Retour à l'article" >(1)</a>
+					*/
+
+			.aNote
+				/* notes en exposant, taille réduite et non soulignées */
+			{
+				vertical-align : super;
+				font-size : 70%;
+				text-decoration : none;
+			}
+
+				.aNote:hover
+					/* en survole souris
+					notes en exposant, taille augménté et soulignées */
+				{
+					font-weight : bold;
+					text-decoration : underline;
+				}
+
+		/* -------------------------------------------- */
+
+		/* "argumentaire" */
+
+			.vrai
+				/* texte bold vert */
+			{
+				font-weight : bold;
+				color : rgb(25,170,10);
+			}
+
+			.faux
+				/* texte bold rouge */
+			{
+				font-weight : bold;
+				color : rgb(200,10,25);
+			}
+
+		/* -------------------------------------------- */
+
+	/* -------------------------------------------- */
+
+
+/* -------------------------------------------- */
+	/* 
+	*/
+/* -------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,420 @@
+
+/* -------------------------------------------- */
+	/* 
+		fichier css pour les différents sites MiG
+	*/
+/* -------------------------------------------- */
+
+
+
+
+/* Aspect des sites */
+
+	/* Bandeau */
+			
+		.Aside_Left
+		{
+			float : left;
+			
+			width : 15%;
+			min-width : 150px;
+			
+			padding : 10px
+		}
+		
+			.MiGs
+			{
+				margin : 0px 0px 30px;
+			}
+			
+				.MiGs img
+				{
+					max-width : 100%;
+					height : auto;
+				}
+				
+			.Menu_Left
+			{
+				margin : 50px 2.5%;
+			}
+				
+		.Aside_Right
+		{
+			float : right;
+			
+			width : 15%;
+			min-width : 150px;
+			
+			padding : 10px
+		}
+		
+			.Site_Logo
+			{
+				margin : 0px 0px 30px;
+			}
+			
+				.Site_Logo img
+				{
+					max-width : 100%;
+					height : auto;
+				}
+				
+			.Menu_Right
+			{
+				margin : 50px 2.5%;
+			}
+						
+				.Connexion
+				{
+					margin : 30px auto;
+					
+					width : 90%;
+				}
+				
+		/* /bandeau */
+				
+		/* <header> */
+	
+		.BandeauSite
+		{
+			width : 60%;
+			margin : 0px auto;
+			padding : 20px 0px 50px;
+			
+			text-align : center;
+		}
+		
+			.Site_Title
+			{
+				font-size : 70px;
+					
+				color : rgb(150,150,170);
+			}
+			
+			.Site_Subtitle
+			{
+				font-size : 25px;
+				font-style : italic;
+						
+				color : rgb(170,150,150);
+			}
+				
+		/* /<header> */
+	
+		/* Contenue Page */
+		
+			.page_Corps
+			{
+				width : 65%;
+				
+				margin : 30px auto;
+			}
+					
+		/* /Contenue Page */
+
+		/* <footer> */
+				
+		.InfosSite
+		{
+			clear : both;	/* "annule" le floating des "menus" */
+			
+			width : 90%;
+			min-height : 150px;
+			
+			margin : 50px auto 20px;
+			
+			font-size : 0.8em;
+			text-align : center;
+			
+			border-top : 1px solid gray;
+			border-bottom : 1px solid gray;
+			border-radius : 30px;
+		}
+		
+		/* /<footer> */
+				
+	/* -------------------------------------------- */
+		
+/* -------------------------------------------- */
+
+/* tag html */
+
+	/* Mise en page */
+	
+		body
+			/* color le fond de la page en noir (économie d'énergie) */
+		{
+			background-color : rgb(0,0,0);
+		}
+	
+		p
+			/* marges intérieures latérales + justification du texte */
+		{			
+			text-align : justify;
+			
+			margin : 0.75em 0em;
+			padding : 0px;
+		}
+		
+		textarea
+		{
+			resize : none;
+		}
+		
+	/* -------------------------------------------- */
+		
+	/* Titres */
+		
+		h1
+		{
+			margin : 20px;
+			padding : 0px;
+			
+			text-align : center;
+			
+			font-size : 500%;
+			
+			font-weight : bold;
+			font-style : normal;
+			text-decoration : none;
+			
+			text-shadow : 10px 10px 10px DimGray;
+		}
+		
+			h1 span
+			{
+				font-size : 80%;
+				
+				font-style : italic;
+			}
+			
+			h2
+			{
+				margin : 40px 20px 30px;
+				padding : 0px;
+				padding-left : 3%;
+				
+				text-align : left;
+				
+				font-size : 200%;
+				
+				font-weight : bold;
+				font-style : normal;
+				text-decoration : underline;
+			}
+			
+				h2 span
+				{
+					font-size : 80%;
+					
+					font-style : italic;
+				}
+			
+				h3
+				{
+					margin : 35px 20px 25px;
+					padding : 0px;
+					padding-left : 6%;
+					
+					text-align : left;
+					
+					font-size : 180%;
+					
+					font-weight : bold;
+					font-style : normal;
+					text-decoration : none;
+				}
+				
+					h3 span
+					{
+						font-size : 80%;
+						
+						font-style : italic;
+					}
+			
+					h4
+					{
+						margin : 30px 20px 20px;
+						padding : 0px;
+						padding-left : 9%;
+						
+						text-align : left;
+						
+						font-size : 130%;
+						
+						font-weight : bold;
+						font-style : italic;
+						text-decoration : none;
+					}
+					
+						h4 span
+						{
+							font-size : 80%;
+							
+							font-weight : normal;
+						}
+			
+						h5
+						{
+							margin : 25px 20px 15px;
+							padding : 0px;
+							padding-left : 12%;
+							
+							text-align : left;
+							
+							font-size : 120%;
+							
+							font-weight : bold;
+							font-style : normal;
+							text-decoration : none;
+						}
+						
+							h5 span
+							{
+								font-size : 80%;
+								
+								font-weight : normal;
+							}
+			
+							h6
+							{
+								margin : 20px 20px 10px;
+								padding : 0px;
+								padding-left : 15%;
+								
+								text-align : left;
+								
+								font-size : 110%;
+								
+								font-weight : normal;
+								font-style : italic;
+								text-decoration : none;
+							}
+							
+								h6 span
+								{
+									font-size : 80%;
+									
+									font-style : normal;
+								}
+	
+	/* -------------------------------------------- */
+
+	/* tag d'importance */
+	
+		strong
+			/* important++ : bold + non soulignés + non italique */
+		{
+			font-weight : bold;
+			font-style : normal;
+			text-decoration : none;
+		}
+		
+		em
+			/* important : non bold + soulignés + non italique */
+		{
+			font-weight : normal;
+			font-style : normal;
+			text-decoration : underline;
+		}
+		
+		mark
+			/* important-- : non bold + non soulignés + italique */
+		{
+			font-weight : normal;
+			font-style : italic;
+			text-decoration : none;
+		}
+	
+	/* -------------------------------------------- */
+	
+	/* Mise en forme */
+	
+		sup, sub
+			/* exposants et indices de taille réduite */
+		{
+			font-size : 70%;
+		}
+	
+	/* -------------------------------------------- */
+
+/* -------------------------------------------- */
+
+/* Mise en valeur */
+
+	/* classique */
+	
+		[class *= "bold"]
+			/* <b>...</b> */
+		{
+			font-weight : bold;
+		}
+	
+		[class *= "italic"]
+			/* <i>...</i> */
+		{
+			font-style : italic;
+		}
+	
+		[class *= "underline"]
+			/* <u>...</u> */
+		{
+			text-decoration : underline;
+		}
+	
+		[class *= "barre"]
+			/* <s>...</s> */
+		{
+			text-decoration : line-through;
+		}
+
+	/* -------------------------------------------- */
+
+	/* Attention */
+
+		[class *= "Warning"]
+			/* texte rouge
+			les class contenant "Warning" */
+		{
+			color : rgb(150,20,50);
+		}
+
+			.WarningSoft
+				/* texte italique rouge */
+			{
+				font-style : italic;
+			}
+
+			.WarningStrong
+				/* texte bold rouge */
+			{
+				font-weight : bold;
+			}
+
+			.WarningHard
+				/* texte bold souligné rouge */		/* !! a posé dans un span si tabulation !! */
+			{
+				font-weight : bold;
+				text-decoration : underline;
+			}
+
+	/* -------------------------------------------- */
+	
+/* -------------------------------------------- */
+
+/* -------------------------------------------- */
+	/* 
+	*/
+/* -------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+

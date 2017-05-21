@@ -1,0 +1,32 @@
+
+/* -------------------------------------------- */
+	/* 
+		fichier css pour les CV
+			en noscript
+	*/
+/* -------------------------------------------- */
+
+
+
+	/* Gestion des spoils */
+	
+		.Contenu:target
+		{
+			display : block;
+		}
+		
+		.XP:target ~ .Contenu
+		{
+			display : none;
+		}
+
+	/* -------------------------------------------- */
+	
+	/* "Effacement" des zones pour scripts */
+			
+		[id ^= "js"]
+		{
+			display : none;
+		}
+
+	/* -------------------------------------------- */
